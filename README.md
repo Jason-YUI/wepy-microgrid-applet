@@ -1,13 +1,6 @@
-# WeUI in WePY
+#Microgrid in WePY
 
-[WeUI](https://github.com/weui/weui-wxss) 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。
-这里是 WeUI 在 WePY 中的使用示例。
-
-## 预览
-
-[Web 版线上DEMO](https://www.madcoder.cn/demos/wepy-weui-demo/index.html)
-
-![image](https://cloud.githubusercontent.com/assets/2182004/26298989/c0ae78b2-3f0b-11e7-8979-e37884a86a43.png)
+微网小程序
 
 ## 体验步骤
 
@@ -19,7 +12,7 @@ npm install wepy-cli -g
 
 ### 2. 下载源代码
 ```bash
-git clone git@github.com:wepyjs/wepy-weui-demo.git
+git clone git@github.com:Jason-YUI/wepy-microgrid-applet.git
 ```
 
 ### 3. 安装开发依赖
@@ -29,7 +22,7 @@ npm install
 
 ### 4. 编译源代码
 ```bash
-wepy build
+wepy build --watch
 ```
 
 ### 5.导入至开发者工具
