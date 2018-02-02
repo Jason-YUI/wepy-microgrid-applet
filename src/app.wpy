@@ -1,5 +1,5 @@
 <style lang="less">
-@import './style/weui.less';
+@import 'assets/style/weui';
 page{
     background-color: #F8F8F8;
     font-size: 16px;
@@ -77,10 +77,10 @@ export default class extends wepy.app {
             'example/searchbar'
         ],
         'window': {
-            'navigationBarTextStyle': 'black',
-            'navigationBarTitleText': 'WeUI in WePY',
-            'navigationBarBackgroundColor': '#f8f8f8',
-            'backgroundColor': '#f8f8f8'
+            'navigationBarTextStyle': '#fff',
+            'navigationBarTitleText': '微网',
+            'navigationBarBackgroundColor': '#ff9052',
+            'backgroundColor': '#ff9052'
         },
         'networkTimeout': {
             'request': 10000,

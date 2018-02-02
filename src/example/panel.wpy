@@ -110,7 +110,7 @@ page{
         };
 
         onLoad () {
-            let base64 = require('../images/base64');
+            let base64 = require('../assets/images/base64');
 
             this.icon20 = base64.icon20;
             this.icon60 = base64.icon60;

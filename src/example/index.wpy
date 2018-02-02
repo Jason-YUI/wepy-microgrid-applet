@@ -55,10 +55,6 @@
 </style>
 <template>
     <view class="index page">
-        <view class="page__hd">
-            <view class="page__title">WeUI</view>
-            <view class="page__desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。以下DEMO就 WePY 实现，并且提供 WEB 版本。</view>
-        </view>
         <view class="page__bd page__bd_spacing">
             <view class="kind-list">
                 <repeat for="{{list}}" key="id">
@@ -78,9 +74,6 @@
                     </view>
                 </repeat>
             </view>
-        </view>
-        <view class="page__ft">
-            <image src="../images/icon_footer.png" style="width: 84px; height: 19px;"></image>
         </view>
     </view>
 </template>

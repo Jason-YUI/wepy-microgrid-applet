@@ -86,7 +86,7 @@
         };
 
         onLoad () {
-            this.icon = require('../images/base64.js').icon20;
+            this.icon = require('../assets/images/base64.js').icon20;
         }
     }
 </script>
