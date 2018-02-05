@@ -49,6 +49,9 @@
     config = {
       pages: [
         'pages/index',
+        'pages/features/features',
+        'pages/tasks/tasks',
+        'pages/help/help'
         // 'example/button',
         // 'example/list',
         // 'example/input',
@@ -98,17 +101,17 @@
           iconPath: './assets/images/icon_tasks_index_active.png',
           text: '报表'
         }, {
-          pagePath: 'pages/index',
+          pagePath: 'pages/features/features',
           selectedIconPath: './assets/images/icon_tasks_feature.png',
           iconPath: './assets/images/icon_tasks_feature_active.png',
           text: '功能'
         }, {
-          pagePath: 'pages/index',
+          pagePath: 'pages/tasks/tasks',
           selectedIconPath: './assets/images/icon_tasks_usage.png',
           iconPath: './assets/images/icon_tasks_usage_active.png',
           text: '待办'
         }, {
-          pagePath: 'pages/index',
+          pagePath: 'pages/help/help',
           selectedIconPath: './assets/images/icon_tasks_help.png',
           iconPath: './assets/images/icon_tasks_help_active.png',
           text: '帮助'

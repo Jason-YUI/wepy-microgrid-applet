@@ -1,12 +1,13 @@
 <template>
+
 </template>
 
 <script>
   import wepy from 'wepy';
 
-  export default class Index extends wepy.page {
+  export default class Tasks extends wepy.page {
     config = {
-      navigationBarTitleText: '工作台',
+      navigationBarTitleText: '待办',
       navigationBarTextStyle: 'white',
       navigationBarBackgroundColor: 'ff9052'
     }
