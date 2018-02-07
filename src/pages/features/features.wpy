@@ -1,15 +1,22 @@
 <template>
-
+  <view>
+    <Grid></Grid>
+  </view>
 </template>
 
 <script>
   import wepy from 'wepy';
+  import Grid from '../../example/grid';
 
   export default class Features extends wepy.page {
     config = {
       navigationBarTitleText: ' 功能',
       navigationBarTextStyle: 'white',
       navigationBarBackgroundColor: 'ff9052'
+    };
+
+    components = {
+      Grid
     }
   }
 </script>
