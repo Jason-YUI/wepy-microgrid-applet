@@ -1,16 +1,16 @@
 <template>
-
+  1111
 </template>
 
 <script>
   import wepy from 'wepy';
 
-  export default class Help extends wepy.page {
+  export default class Card extends wepy.page {
     config = {
-      navigationBarTitleText: '帮助',
+      navigationBarTitleText: '名片',
       navigationBarTextStyle: 'white',
-      navigationBarBackgroundColor: 'ff9052'
-    }
+      navigationBarBackgroundColor: '#3788e7'
+    };
   }
 </script>
 

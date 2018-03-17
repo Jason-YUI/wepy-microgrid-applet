@@ -49,72 +49,37 @@
     config = {
       pages: [
         'pages/index',
-        'pages/features/features',
-        'pages/tasks/tasks',
-        'pages/help/help'
-        // 'example/button',
-        // 'example/list',
-        // 'example/input',
-        // 'example/slider',
-        // 'example/uploader',
-        //
-        // 'example/article',
-        // 'example/badge',
-        // 'example/flex',
-        // 'example/footer',
-        // 'example/gallery',
-        // 'example/grid',
-        // 'example/icons',
-        // 'example/loadmore',
-        // 'example/panel',
-        // 'example/preview',
-        // 'example/progress',
-        //
-        // 'example/actionsheet',
-        // 'example/dialog',
-        // 'example/msg',
-        // 'example/msg_fail',
-        // 'example/msg_success',
-        // 'example/picker',
-        // 'example/toast',
-        //
-        // 'example/navbar',
-        // 'example/tabbar',
-        //
-        // 'example/searchbar'
+        'pages/product/product',
+        'pages/official/official',
       ],
       window: {
         navigationBarTextStyle: '#fff',
         navigationBarTitleText: '微网',
-        navigationBarBackgroundColor: '#ff9052',
-        backgroundColor: '#ff9052'
+        navigationBarBackgroundColor: '#3788e7',
+        backgroundColor: '#3788e7',
+        enablePullDownRefresh: true,
       },
 
       tabBar: {
         color: '#8a8a8a',
-        selectedColor: '#ff9052',
+        selectedColor: '#3788e7',
         backgroundColor: '#fff',
         borderStyle: 'black',
         list: [{
           pagePath: 'pages/index',
-          selectedIconPath: './assets/images/icon_tasks_index.png',
-          iconPath: './assets/images/icon_tasks_index_active.png',
-          text: '报表'
+          selectedIconPath: './assets/images/icon_tasks_card_active.png',
+          iconPath: './assets/images/icon_tasks_card.png',
+          text: '名片'
         }, {
-          pagePath: 'pages/features/features',
-          selectedIconPath: './assets/images/icon_tasks_feature.png',
-          iconPath: './assets/images/icon_tasks_feature_active.png',
-          text: '功能'
+          pagePath: 'pages/product/product',
+          selectedIconPath: './assets/images/icon_tasks_product_active.png',
+          iconPath: './assets/images/icon_tasks_product.png',
+          text: '产品'
         }, {
-          pagePath: 'pages/tasks/tasks',
-          selectedIconPath: './assets/images/icon_tasks_usage.png',
-          iconPath: './assets/images/icon_tasks_usage_active.png',
-          text: '待办'
-        }, {
-          pagePath: 'pages/help/help',
-          selectedIconPath: './assets/images/icon_tasks_help.png',
-          iconPath: './assets/images/icon_tasks_help_active.png',
-          text: '帮助'
+          pagePath: 'pages/official/official',
+          selectedIconPath: './assets/images/icon_tasks_official_active.png',
+          iconPath: './assets/images/icon_tasks_official.png',
+          text: '官网'
         }]
       },
 
@@ -135,3 +100,4 @@
     }
   }
 </script>
+

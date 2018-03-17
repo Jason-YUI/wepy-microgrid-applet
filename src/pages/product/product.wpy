@@ -6,17 +6,15 @@
 
 <script>
   import wepy from 'wepy';
-  import Grid from '../../example/grid';
 
-  export default class Features extends wepy.page {
+  export default class Product extends wepy.page {
     config = {
-      navigationBarTitleText: ' 功能',
+      navigationBarTitleText: '产品',
       navigationBarTextStyle: 'white',
-      navigationBarBackgroundColor: 'ff9052'
+      navigationBarBackgroundColor: '#3788e7'
     };
 
     components = {
-      Grid
     }
   }
 </script>

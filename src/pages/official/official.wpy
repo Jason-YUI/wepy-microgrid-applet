@@ -5,11 +5,11 @@
 <script>
   import wepy from 'wepy';
 
-  export default class Tasks extends wepy.page {
+  export default class Official extends wepy.page {
     config = {
-      navigationBarTitleText: '待办',
+      navigationBarTitleText: '官网',
       navigationBarTextStyle: 'white',
-      navigationBarBackgroundColor: 'ff9052'
+      navigationBarBackgroundColor: '#3788e7'
     }
   }
 </script>
