@@ -57,6 +57,7 @@
         navigationBarTitleText: '微网',
         navigationBarBackgroundColor: '#3788e7',
         backgroundColor: '#3788e7',
+        backgroundColorBottom: '#fff',
         enablePullDownRefresh: true,
       },
 
