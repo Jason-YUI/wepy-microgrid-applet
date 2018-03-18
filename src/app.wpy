@@ -40,7 +40,6 @@
 </style>
 
 <script>
-
   import wepy from 'wepy';
   import 'wepy-async-function';
 
@@ -53,10 +52,6 @@
         'pages/official/official',
       ],
       window: {
-        navigationBarTextStyle: '#fff',
-        navigationBarTitleText: '微网',
-        navigationBarBackgroundColor: '#3788e7',
-        backgroundColor: '#3788e7',
         backgroundColorBottom: '#fff',
         enablePullDownRefresh: true,
       },

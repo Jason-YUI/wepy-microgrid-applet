@@ -22,6 +22,9 @@
     config = {
       navigationBarTitleText: '名片',
       enablePullDownRefresh: false,
+      navigationBarTextStyle: '#fff',
+      navigationBarBackgroundColor: '#3788e7',
+      backgroundColor: '#3788e7',
     };
 
     data = {

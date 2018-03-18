@@ -1,0 +1,108 @@
+<template>
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+            <image src="{{ userInfo.userImg }}" style="width: 50px; height: 50px; display: block"/>
+          </view>
+          <view class="weui-cell__bd">
+            <view>王子涵</view>
+            <view style="font-size: 13px;color: #888888;">销售总监</view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <image src="{{userInfo.bannerImg}}"
+               bindload="imageLoad"
+               style="width:{{imageSize[0].width}}rpx; height:{{imageSize[0].height}}rpx;"
+               data-index="0"
+               mode='scaleToFill'>
+        </image>
+      </view>
+      <view class="weui-article">
+        <view class="weui-article__section">
+          <view class="weui-article__h3">上海特斯拉销售总公司</view>
+          <view class="weui-article__p">
+            速度卓越的车款，拥有突破记录的加速性能、续航里程和驾驶性能。作为一辆纯电动超级跑车。Roadster将空气动力工程发挥到极致，在性能和效率方面树立行业典范。
+          </view>
+        </view>
+      </view>
+      <view class="item"></view>
+      <view class="weui-article">
+        <view class="weui-article__section">
+          <view class="weui-article__h3">出色安全和性能表现</view>
+          <view class="weui-article__p">
+            Tesla Model S是一款由Tesla汽车公司制造的全尺寸高性能电动轿车，外观造型方面，该车定位一款四门Coupe车型，动感的车身线条使人过目不忘。此外在前脸造型方面，该车也采用了自己的设计语言。
+          </view>
+        </view>
+      </view>
+      <view class="item"></view>
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class OfficialNews extends wepy.page {
+    data = {
+      userInfo: {
+        userImg: '../../assets/images/icon/icon-avatar-img.png',
+        bannerImg: '../../assets/images/official_banner.png'
+      },
+      array: [{
+        mode: 'scaleToFill'
+      }],
+      imageSize: {}
+    };
+
+    methods = {
+      // 图片自适应处理
+      imageLoad(e) {
+        let originWidth = e.detail.width,
+          originHeight = e.detail.height,
+          ratio = originWidth / originHeight;
+        let viewWidth = 750, viewHeight;
+        if (originWidth >= viewWidth) {
+          viewHeight = viewWidth / ratio;
+        } else {
+          viewWidth = originWidth;
+          viewHeight = originHeight;
+        }
+
+        let imageSize = this.data.imageSize;
+        imageSize[e.target.dataset.index] = {
+          width: viewWidth,
+          height: viewHeight
+        };
+
+        this.imageSize = imageSize;
+      }
+    };
+  }
+</script>
+
+<style lang="less">
+  @import "../assets/style/base/variable/fontSize.less";
+  @import "../assets/style/base/variable/color.less";
+
+  page {
+    background-color: @weuiBgColorWhite;
+  }
+
+  .weui-article__h3 {
+    text-align: center;
+    font-size: @large;
+  }
+
+  .weui-article__p {
+    color: @weuiTextColorDarkGray;
+  }
+
+  .item {
+    height: 30rpx;
+    width: 100%;
+    background-color: #EFEFF4;
+  }
+</style>

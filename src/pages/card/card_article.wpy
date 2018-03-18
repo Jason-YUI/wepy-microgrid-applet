@@ -22,7 +22,7 @@
 
   export default class CardArticle extends wepy.page {
     data = {
-      picArticle: '../assets/images/pic_article.png'
+      picArticle: '../../assets/images/pic_article.png'
     }
   }
 </script>

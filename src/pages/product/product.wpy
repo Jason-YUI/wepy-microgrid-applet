@@ -9,8 +9,8 @@
   export default class Product extends wepy.page {
     config = {
       navigationBarTitleText: '产品',
-      navigationBarTextStyle: 'white',
-      navigationBarBackgroundColor: '#3788e7'
+      navigationBarTextStyle: 'black',
+      navigationBarBackgroundColor: 'white'
     };
 
     components = {

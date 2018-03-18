@@ -1,19 +1,29 @@
 <template>
-
+  <OfficialNews></OfficialNews>
+  <OfficialContact></OfficialContact>
 </template>
 
 <script>
   import wepy from 'wepy';
+  import OfficialNews from '../../components/official_news';
+  import OfficialContact from '../../components/official_contact';
 
   export default class Official extends wepy.page {
     config = {
       navigationBarTitleText: '官网',
-      navigationBarTextStyle: 'white',
-      navigationBarBackgroundColor: '#3788e7'
+      navigationBarTextStyle: 'black',
+      navigationBarBackgroundColor: 'white',
+    };
+
+    components = {
+      OfficialNews,
+      OfficialContact
     }
   }
 </script>
 
 <style lang="less">
+  @import "../../assets/style/base/variable/color.less";
+  @import "../../assets/style/base/variable/fontSize.less";
 
 </style>
