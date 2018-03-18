@@ -1,0 +1,79 @@
+<template>
+  <view class="page-user">
+    <view class="weui-panel weui-bg-primary">
+      <view class="weui-cells weui-cells_after-title weui-bg-primary">
+        <view class="weui-cell">
+          <view class="weui-cell__bd userinfo clearfix">
+            <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
+            <view class="userinfo-info">
+              <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
+              <view class="userinfo-status">{{ userInfo.career }}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class Header extends wepy.page {
+    data = {
+      userInfo: {
+        nickName: '王子涵',
+        career: '董事长兼总经理',
+        avatarUrl: '../assets/images/icon/icon-avatar-img@2x.png'
+      }
+    };
+  }
+</script>
+
+<style lang="less">
+  @import "../../assets/style/base/fn.less";
+  @import "../../assets/style/base/variable/color.less";
+
+  .page-user {
+    @userinfoHeight: 200rpx;
+    @userinfoSpace: 8rpx;
+    @uiColorWhite: white;
+
+    .weui-panel, .weui-cells{
+      margin-top: -2rpx;
+    }
+
+    .userinfo {
+      padding: 20rpx 0;
+    }
+
+    .userinfo-avatar {
+      float: left;
+      width: @userinfoHeight;
+      height: @userinfoHeight;
+      border-radius: 8rpx;
+    }
+
+    .userinfo-info {
+      float: left;
+      line-height: 1;
+      padding: @userinfoSpace 0;
+      margin-left: 3 * @userinfoSpace;
+    }
+
+    .userinfo-nickname {
+      color: @uiColorWhite;
+      font-size: (@userinfoHeight - 13 * @userinfoSpace) * (16 / 30);
+      margin-bottom: 5 * @userinfoSpace;
+    }
+    .userinfo-status {
+      font-weight: 200;
+      color: @uiColorWhite;
+      font-size: (@userinfoHeight - 16 * @userinfoSpace) * (14 / 30);
+    }
+
+    .weui-bg-primary {
+      background-color: @weuiColorPrimary;
+    }
+  }
+</style>

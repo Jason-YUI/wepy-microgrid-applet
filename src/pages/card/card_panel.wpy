@@ -1,0 +1,45 @@
+<template>
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">
+          <view class="weui-media-box__title weui-media-box__title_in-text">个性签名</view>
+        </view>
+          <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_text">
+              <view class="weui-media-box__desc">窗外的天气，想你的心忐忑不定，屋外的天空，像你的爱犹豫不决。</view>
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class="item"/>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class CardPanel extends wepy.page {
+
+  }
+</script>
+
+<style lang="less">
+  @import "../../assets/style/base/variable/color.less";
+  @import "../../assets/style/base/variable/fontSize.less";
+
+  .weui-media-box__title_in-text {
+    color: @weuiTextColorTitle;
+  }
+
+  .weui-media-box__desc {
+    color: @weuiTextColorTitle;
+    font-size: @middle;
+  }
+
+  .item {
+    height: 30rpx;
+    width: 100%;
+    background-color: #EFEFF4;
+  }
+</style>

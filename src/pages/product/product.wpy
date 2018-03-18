@@ -1,6 +1,5 @@
 <template>
   <view>
-    <Grid></Grid>
   </view>
 </template>
 

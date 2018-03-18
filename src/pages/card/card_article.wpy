@@ -1,0 +1,34 @@
+<template>
+  <view class="page">
+    <view class="page-bd">
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">
+          <view class="weui-media-box__title weui-media-box__title_in-text">照片展示</view>
+        </view>
+      </view>
+      <view class="weui-article">
+        <view class="weui-article__section">
+          <view class="weui-article__p">
+            <image class="weui-article__img" src="{{picArticle}}" mode="aspectFit" style="height: 180px"/>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class CardArticle extends wepy.page {
+    data = {
+      picArticle: '../assets/images/pic_article.png'
+    }
+  }
+</script>
+
+<style lang="less">
+  .weui-article {
+    text-align: center;
+  }
+</style>

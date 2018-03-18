@@ -1,0 +1,92 @@
+<template>
+  <view class="page">
+    <view class="page_hd">
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view style="font-weight: bold; display: inline-block; vertical-align: middle;">名片信息</view>
+        </view>
+      </view>
+
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left">手机：</view>
+          <view>13122378828</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left" >固话：</view>
+          <view>15356773433</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left">邮箱：</view>
+          <view>jianghao111@gmail.com</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left">微信：</view>
+          <view>IVE2013</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left">公司：</view>
+          <view>上海微问家信息技术有限公司</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell__left">地址：</view>
+          <view>上海市浦东新区高科技园区亮秀路Y1座112号809室</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+
+      <view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+          <view class="weui-cell-save">保存到通讯录</view>
+        </view>
+      </view>
+    </view>
+    <view class="item"></view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class CardInformation extends wepy.page {
+
+  }
+</script>
+
+<style lang="less">
+  @import "../../assets/style/base/variable/color.less";
+
+  .weui-cell__left {
+    float: left;
+    color: @weuiTextColorGray;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .weui-cell-save {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    color: @weuiColorPrimary;
+  }
+
+  .item {
+    height: 30rpx;
+    width: 100%;
+    background-color: #EFEFF4;
+  }
+</style>

@@ -1,0 +1,72 @@
+<template>
+  <view class="page">
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <image src="{{imgSrc1}}"></image>
+          <view class="placeholder">浏览 1200</view>
+        </view>
+        <view class="weui-flex__item">
+          <image src="{{imgSrc2}}"></image>
+          <view class="placeholder">赞 280</view>
+        </view>
+        <view class="weui-flex__item">
+          <image src="{{imgSrc3}}"></image>
+          <view class="placeholder">转发 102</view>
+        </view>
+      </view>
+    </view>
+    <view class="item"></view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class Category extends wepy.page {
+    data = {
+      imgSrc1: '../assets/images/icon/icon-avatar-browse.png',
+      imgSrc2: '../assets/images/icon/icon-avatar-favor.png',
+      imgSrc3: '../assets/images/icon/icon-avatar-forwarded.png',
+    }
+  }
+</script>
+
+<style lang="less">
+  @import "../../assets/style/base/variable/color.less";
+  @import "../../assets/style/base/variable/fontSize.less";
+
+  .page__bd {
+    padding-bottom: 0;
+  }
+
+  .placeholder {
+    margin: 0;
+    padding: 0 10px;
+    height: 20px;
+    background: none;
+    color: @weuiTextColorGray;
+    text-align: center;
+    font-size: @small;
+  }
+
+  .weui-flex__item {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .weui-flex__item image {
+    width: 28px;
+    height: 28px;
+  }
+
+  .item {
+    height: 30rpx;
+    width: 100%;
+    background-color: #EFEFF4;
+  }
+
+  .page__bd_spacing {
+    padding: 0;
+  }
+</style>

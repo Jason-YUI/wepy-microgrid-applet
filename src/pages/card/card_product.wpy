@@ -1,0 +1,57 @@
+<template>
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">
+          <view class="weui-media-box__title weui-media-box__title_in-text">主推产品</view>
+        </view>
+        <view class="weui-panel__bd">
+          <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="{{iconProduct}}"/>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">iphone8 plus</view>
+              <view class="weui-media-box__desc">可能是史上最伟大的产品之一</view>
+              <view class="weui-media-box__num">¥ 5888</view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class="item"></view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy';
+
+  export default class CardProduct extends wepy.page {
+    data = {
+      iconProduct: '../assets/images/icon_card_product@2x.png'
+    };
+  };
+</script>
+
+<style lang="less">
+  @import "../../assets/style/base/variable/color.less";
+  @import "../../assets/style/base/variable/fontSize.less";
+
+  page {
+    background-color: #FFFFFF;
+  }
+
+  .weui-media-box__num {
+    color: @weuiBgColorRed;
+  }
+
+  .weui-media-box__desc {
+    color: @weuiTextColorGray;
+  }
+
+  .item {
+    height: 30rpx;
+    width: 100%;
+    background-color: #EFEFF4;
+  }
+</style>
